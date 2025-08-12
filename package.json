@@ -1,0 +1,21 @@
+{
+  "name": "react-esbuild-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"esbuild src/index.js --outfile=dist/bundle.js --loader:.js=jsx --bundle --minify --serve=3000 --servedir=dist --watch",
+    "build":"esbuild src/index.js --outfile=dist/bundle.js --loader:.js=jsx --bundle --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.3"
+  }
+}
